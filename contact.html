@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تماس با ما | گروه ساختمانی تراز</title>
+<meta name="description" content="درخواست مشاوره برای مشارکت در ساخت، خرید واحد یا همکاری پیمانکاری با گروه ساختمانی تراز.">
+<meta property="og:title" content="تماس با ما | گروه ساختمانی تراز">
+<meta property="og:description" content="درخواست مشاوره برای مشارکت در ساخت، خرید واحد یا همکاری پیمانکاری با گروه ساختمانی تراز.">
+<meta property="og:locale" content="fa_IR">
+<meta name="theme-color" content="#12385f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Kufi+Arabic:wght@600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="contact">
+<header id="site-header"></header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="مسیر"><a href="index.html">خانه</a><span>/</span><span>تماس با ما</span></nav>
+      <h1>تماس با ما</h1>
+      <p>فرم را پر کنید؛ کارشناس مربوط ظرف ۲۴ ساعت کاری با شما تماس می‌گیرد.</p>
+    </div>
+  </section>
+  <section class="section-tight">
+    <div class="wrap contact-grid">
+      <div class="panel-card">
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <label class="field"><span>نام و نام خانوادگی</span><input class="input" id="c-name" autocomplete="name" placeholder="مثلاً مریم احمدی"></label>
+            <label class="field"><span>شمارهٔ موبایل</span><input class="input ltr" id="c-phone" inputmode="tel" autocomplete="tel" placeholder="09121234567"></label>
+            <label class="field"><span>موضوع</span>
+              <select class="select" id="c-topic"><option>خرید واحد</option><option>مشارکت در ساخت</option><option>همکاری پیمانکاری</option><option>خدمات پس از تحویل</option><option>سایر</option></select></label>
+            <label class="field"><span>پروژهٔ مورد نظر</span>
+              <select class="select" id="c-project"><option>هنوز مشخص نیست</option><option>برج مسکونی آسمان</option><option>مجتمع اداری‌تجاری نگین</option><option>مجتمع مسکونی پردیس</option></select></label>
+            <label class="field full"><span>پیام</span><textarea class="textarea" id="c-msg" placeholder="متراژ، محله یا هر توضیحی که به ما کمک می‌کند…"></textarea></label>
+            <div class="full" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+              <span class="muted" style="font-size:12px">اطلاعات شما فقط برای پاسخ به همین درخواست استفاده می‌شود.</span>
+              <button class="btn btn-primary" type="submit">ارسال درخواست</button>
+            </div>
+          </div>
+        </form>
+        <div class="success" id="contact-done" hidden>
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>
+          <b><span id="contact-done-name"></span>، درخواست شما ثبت شد.</b>
+          <p>کد پیگیری: <b class="mono" id="contact-done-code"></b> — همکاران ما به‌زودی تماس می‌گیرند. (نسخهٔ نمایشی: پیام به جایی ارسال نمی‌شود.)</p>
+          <button class="btn btn-ghost btn-sm" type="button" id="contact-again">ثبت درخواست دیگر</button>
+        </div>
+      </div>
+      <aside class="contact-info">
+        <div class="panel-card">
+          <div class="contact-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><span>دفتر مرکزی</span><b>تهران، خیابان ولیعصر، بالاتر از پارک ملت، برج ۲۴، طبقهٔ ۹</b></div></div>
+          <div class="contact-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><span>تلفن</span><b class="num">۰۲۱-۹۱۰۰۲۴۰۰</b></div></div>
+          <div class="contact-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><span>ایمیل</span><b class="mono" dir="ltr">info@taraz-group.ir</b></div></div>
+          <div class="contact-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><span>ساعات کاری</span><b>شنبه تا چهارشنبه ۸ تا ۱۷ · پنجشنبه ۸ تا ۱۳</b></div></div>
+        </div>
+        <div class="panel-card">
+          <h2 style="font-size:16px">دفاتر فروش</h2>
+          <div style="display:grid;gap:10px;font-size:14px;color:var(--ink-2)">
+            <div><b style="color:var(--ink)">شیراز</b> · بلوار معالی‌آباد، دفتر فروش پروژهٔ پردیس</div>
+            <div><b style="color:var(--ink)">کرج</b> · گوهردشت، بلوار موذن، ساختمان سرو</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
